@@ -31,9 +31,7 @@ Ensuite, ouvrez Unity Hub et veuillez créer un compte Unity.
 ### Installation de l'éditeur Unity
 
 L'éditeur Unity est l'outil de développement pour les projets Unity. C'est ce logiciel qui permet de créer, modifier et compiler les projets Unity.
-
 Le projet CoHoMa Unity a été développé avec la version 2021.3.33f1 de Unity. Il est recommandé d'installer cette version pour éviter tout problème de compatibilité.
-
 Pour cela, ajoutez les droits en exécutant la commande suivante:
 
 ```bash
@@ -66,9 +64,32 @@ Puis, exécuter le script suivant dans votre terminal:
 ./create_unity_project.sh
 ```
 
+Ensuite, fermez la fenêtre de Unity ou quittez le terminal qui à crée le projet pour passer à la section suivante.
+
+### Création du lien symbolique du dossier Assets
+
+> Cette étape est nécessaire pour que le projet Unity puisse accéder aux fichiers du projet CoHoMa Unity.
+Elle consiste à supprimer le dossier Assets du projet Unity et à le remplacer par un lien symbolique pointant vers le dossier Assets du projet CoHoMa Unity.
+
+Pour cela, ajoutez les droits en exécutant la commande suivante:
+
+```bash
+chmod +x create_unity_symbolics_links.sh
+```
+
+Puis, exécuter le script suivant dans votre terminal:
+
+```bash
+./create_unity_symbolics_links.sh
+```
+
+Une fois cette étape terminée, vous pouvez ouvrir le projet Unity CoHoMa Unity.
+
 ## Utilisation
 
 ### Ouverture du projet CohomaUnity
+
+Cette étape consiste à ouvrir le projet Unity CoHoMa Unity.
 
 Ajoutez les droits en exécutant la commande suivante:
 
