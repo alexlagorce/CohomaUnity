@@ -28,6 +28,8 @@ Puis, exécuter le script suivant dans votre terminal:
 
 Ensuite, ouvrez Unity Hub et veuillez créer un compte Unity.
 
+Enfin, veuillez ajouter une License personnal.
+
 ### Installation de l'éditeur Unity
 
 L'éditeur Unity est l'outil de développement pour les projets Unity. C'est ce logiciel qui permet de créer, modifier et compiler les projets Unity.
@@ -44,9 +46,7 @@ Puis, exécuter le script suivant dans votre terminal:
 ./install_unity_editor.sh
 ```
 
-Ensuite, veuillez suivre l'assistant de téléchargement de Unity en acceptant les conditions d'utilisation et en choisissant le composant Unity 2021.3.33f1
-
-Enfin, veuillez ajouter une License personnal.
+Ensuite, veuillez suivre l'assistant de téléchargement de Unity en acceptant les conditions d'utilisation et en choisissant le composant Unity 2021.3.33f1 et le composant Android Build Support.
 
 ### Installation du projet CoHoMaUnity
 
