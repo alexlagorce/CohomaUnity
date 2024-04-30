@@ -8,7 +8,7 @@ Projet Unity client à héberger sur un casque de réalité virtuelle Pico 4. Pe
 
 ### Prérequis
 
-- Système d'exploitation baasé sur Debian
+- Système d'exploitation basé sur Debian
 
 ### Installation de Unity Hub
 
