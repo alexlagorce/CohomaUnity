@@ -86,17 +86,19 @@ Puis, exécuter le script suivant dans votre terminal:
 
 ### Ajout du package ROS 
 
-Dans l'onglet Robotics/ROS Settings, entrez l'adresse IP de la machine qui lance le conteneur Dockeu (127.0.0.1 par défaut) et changer le Protocol en ROS2.
+Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche. Sélectionner Add package from git URL et entrer https://github.com/Unity-Technologies/ROS-TCP-Connector?path=/com.unity.robotics.ros-tcp-connector afin d'installer le package.
+
+![RosPackage](images/RosPackage.png)
+
+### Réglages ROS2 et Docker
+
+Dans l'onglet Robotics/ROS Settings, entrez l'adresse IP de la machine qui lance le conteneur Docker (127.0.0.1 par défaut) et changer le Protocol en ROS2.
+
+![Ros2Settings](images/Ros2Settings.png)
 
 ### Ajout du package PICO-Unity-Ingegration-SDK 
 
-Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package frim git URL et entrer https://github.com/Pico-Developer/PICO-Unity-Integration-SDK afin d'installer le package.
-
-### Ajout d'un message ROS dans Unity
-
-//TODO
-
-[Nom image](lien image)
+Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package from git URL et entrer https://github.com/Pico-Developer/PICO-Unity-Integration-SDK afin d'installer le package ( même manipulation que pour le package ROS ).
 
 
 
