@@ -1,7 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using MyObjects.Scripts;
 public class PointMarkerGenerator : MonoBehaviour
 {
     public GameObject rightController;
-    private XRRayInteractor RightXRRayInteractor;
+    private UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor RightXRRayInteractor;
     private TextMeshPro descriptionRayText;
     private GameObject pointMarkerRed3D;
     private GameObject pointMarkerRed2D;
@@ -52,9 +52,9 @@ public class PointMarkerGenerator : MonoBehaviour
         pointMarkerBlue2D = Resources.Load<GameObject>("Prefabs/UI/Components/PointMarkerBlue2D");
         
         compass = GameObject.Find("Compass").GetComponent<Compass>();
-        RightXRRayInteractor = rightController.transform.GetChild(2).GetComponent<XRRayInteractor>();
+        RightXRRayInteractor = rightController.transform.GetChild(2).GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor>();
         descriptionRayText = rightController.transform.GetChild(4).GetComponent<TextMeshPro>();
-        originalColorGradient = RightXRRayInteractor.gameObject.GetComponent<XRInteractorLineVisual>().validColorGradient;
+        originalColorGradient = RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual>().validColorGradient;
         colorGradientRed = new Gradient();
         colorGradientRed.SetKeys(
             new GradientColorKey[] { new GradientColorKey(UnityEngine.Color.red, 0.0f), new GradientColorKey(UnityEngine.Color.red, 1.0f) },
@@ -114,8 +114,8 @@ public class PointMarkerGenerator : MonoBehaviour
 
     void SetPointModeCible()
     {
-        RightXRRayInteractor.gameObject.GetComponent<XRInteractorLineVisual>().validColorGradient = colorGradientRed;
-        RightXRRayInteractor.gameObject.GetComponent<XRRayInteractor>().raycastMask = LayerMask.GetMask("Map");
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual>().validColorGradient = colorGradientRed;
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor>().raycastMask = LayerMask.GetMask("Map");
 
         ToggleUISwitch("Fullmap Toggle", false);
         ToggleUISwitch("ScrollDroneToggle", false);
@@ -124,8 +124,8 @@ public class PointMarkerGenerator : MonoBehaviour
     
     void setPointModeCaracteristique()
     {
-        RightXRRayInteractor.gameObject.GetComponent<XRInteractorLineVisual>().validColorGradient = colorGradientBlue;
-        RightXRRayInteractor.gameObject.GetComponent<XRRayInteractor>().raycastMask = LayerMask.GetMask("Map");
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual>().validColorGradient = colorGradientBlue;
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor>().raycastMask = LayerMask.GetMask("Map");
         
         ToggleUISwitch("Fullmap Toggle", false);
         ToggleUISwitch("ScrollDroneToggle", false);
@@ -134,8 +134,8 @@ public class PointMarkerGenerator : MonoBehaviour
 
     void SetDefaultSettings()
     {
-        RightXRRayInteractor.gameObject.GetComponent<XRInteractorLineVisual>().validColorGradient = originalColorGradient;
-        RightXRRayInteractor.gameObject.GetComponent<XRRayInteractor>().raycastMask = LayerMask.GetMask("UI");
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals.XRInteractorLineVisual>().validColorGradient = originalColorGradient;
+        RightXRRayInteractor.gameObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor>().raycastMask = LayerMask.GetMask("UI");
         descriptionRayText.text = "";
     }
 

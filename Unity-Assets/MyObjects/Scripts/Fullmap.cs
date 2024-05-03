@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
@@ -11,7 +11,7 @@ public class Fullmap : MonoBehaviour
     public InputActionReference A_button;
     public InputActionReference Trigger_button;
     public InputActionReference Grip_button;
-    public XRRayInteractor rayInteractor;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
     
     private GameObject PointTarget3D;
     private GameObject Line3D;

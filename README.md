@@ -107,7 +107,8 @@ Puis, exécuter le script suivant dans votre terminal:
 
 ### Ajout du package ROS 
 
-Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche. Sélectionner Add package from git URL et entrer https://github.com/Unity-Technologies/ROS-TCP-Connector?path=/com.unity.robotics.ros-tcp-connector afin d'installer le package.
+Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche. Sélectionner Add package from git URL et entrer https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector afin d'installer le package.
+
 
 ![RosPackage](images/RosPackage.png)
 
@@ -120,6 +121,36 @@ Dans l'onglet Robotics/ROS Settings, entrez l'adresse IP de la machine qui lance
 ### Ajout du package PICO-Unity-Ingegration-SDK 
 
 Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package from git URL et entrer https://github.com/Pico-Developer/PICO-Unity-Integration-SDK afin d'installer le package ( même manipulation que pour le package ROS ).
+
+En cas de problème, il est possible de télécharger le package directement sur le github de Pico-Developer : https://github.com/Pico-Developer
+Ensuite, dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package from disk et sélectionner le fichier package.json du package téléchargé.
+
+
+### Ajout des autres packages
+
+Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package by name et entrer le nom du package à installer. Par exemple pour installer le package Burst, entrer com.unity.burst.
+
+Les packages à installer sont les suivants: 
+
+- Burst : com.unity.burst
+- Code Coverage : com.unity.testtools.codecoverage
+- Code RP Library : com.unity.render-pipelines.core
+- Custom NUnit : com.unity.ext.nunit
+- Editor Coroutines : com.unity.editorcoroutines
+- Input System : com.unity.inputsystem
+- Mathematics : com.unity.mathematics
+- OpenXR Plugin : com.unity.xr.openxr
+- Profile Analyzer : com.unity.performance.profile-analyzer
+- Searcher : com.unity.searcher
+- Settings Manager : com.unity.settings-manager
+- Shader Graph : com.unity.shadergraph
+- Universal RP : com.unity.render-pipelines.universal
+- XR Core Utilities : com.unity.xr.core-utils
+- XR Interaction Toolkit : com.unity.xr.interaction.toolkit
+- XR Legacy Input Helpers : com.unity.xr.legacyinputhelpers
+- XR Plugin Management : com.unity.xr.management
+
+
 
 
 
