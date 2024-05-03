@@ -103,8 +103,6 @@ Puis, exécuter le script suivant dans votre terminal:
 ./open_unity_project.sh
 ```
 
-### Connexion entre ROS et Unity
-
 ### Ajout du package ROS 
 
 Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche. Sélectionner Add package from git URL et entrer https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector afin d'installer le package.
@@ -121,10 +119,6 @@ Dans l'onglet Robotics/ROS Settings, entrez l'adresse IP de la machine qui lance
 ### Ajout du package PICO-Unity-Ingegration-SDK 
 
 Dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package from git URL et entrer https://github.com/Pico-Developer/PICO-Unity-Integration-SDK.git? afin d'installer le package ( même manipulation que pour le package ROS ).
-
-En cas de problème, il est possible de télécharger le package directement sur le github de Pico-Developer : https://github.com/Pico-Developer
-Ensuite, dans l'onglet Window, ouvrir le Package Manager et cliquer sur le bouton + en haut à gauche, Sélectionner Add package from disk et sélectionner le fichier package.json du package téléchargé.
-
 
 ### Ajout des autres packages
 
