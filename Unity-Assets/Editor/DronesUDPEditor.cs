@@ -1,8 +1,9 @@
-// Ce script code l'affichage du Script DronesUDP dans la fenêtre inspector de Unity
+// Ce script code l'affichage du Script DronesUDP dans la fenï¿½tre inspector de Unity
 
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.InputSystem;
+using Polytech.CoHoMa.Scene;
 
 [CustomEditor(typeof(DronesUDP))]
 public class DronesUDPEditor : Editor
@@ -18,7 +19,7 @@ public class DronesUDPEditor : Editor
 
     void OnEnable()
     {
-        // Reliez vos propriétés ici
+        // Reliez vos propriï¿½tï¿½s ici
         useMaterialProp = serializedObject.FindProperty("useMaterial");
         displayMaterialProp = serializedObject.FindProperty("displayMaterial");
         displayRawImageProp = serializedObject.FindProperty("displayRawImage");
@@ -31,7 +32,7 @@ public class DronesUDPEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        serializedObject.Update(); // Mise à jour de l'objet sérialisé
+        serializedObject.Update(); // Mise ï¿½ jour de l'objet sï¿½rialisï¿½
 
         EditorGUILayout.PropertyField(useMaterialProp); // Toujours afficher useMaterial
 

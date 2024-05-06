@@ -304,7 +304,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_ButtonPressPoint: 0.5
 --- !u!114 &942810691211101373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +630,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_ButtonPressPoint: 0.5
 --- !u!114 &6678509202150728127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,7 +923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_MoveSpeed: 1
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -1006,7 +1005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_TurnAmount: 45
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
@@ -1048,7 +1048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_TurnSpeed: 60
   m_LeftHandTurnAction:
     m_UseReference: 1
@@ -1293,7 +1294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_DelayTime: 0
 --- !u!1 &2626757739553014894
 GameObject:
@@ -1339,7 +1341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496880615cd240be960d436c1c8ae570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_ClimbSettings:
     m_UseConstant: 1
     m_ConstantValue:
@@ -1531,7 +1534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b94c4c83dec6a94fbaebf543478259e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_EnableFreeXMovement: 1
   m_EnableFreeYMovement: 0
   m_EnableFreeZMovement: 1
@@ -1540,6 +1544,36 @@ MonoBehaviour:
   m_ControllerTransform: {fileID: 202364688}
   m_EnableMoveWhileSelecting: 0
   m_MoveFactor: 1
+  m_GrabMoveInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Grab Move
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: f07db32e-931d-4143-9954-899b77cfaa56
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Grab Move Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: bea7cdae-6805-401a-a7b1-c7704aa6e22e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
   m_GrabMoveAction:
     m_UseReference: 1
     m_Action:
@@ -1564,7 +1598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b94c4c83dec6a94fbaebf543478259e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_EnableFreeXMovement: 1
   m_EnableFreeYMovement: 0
   m_EnableFreeZMovement: 1
@@ -1573,6 +1608,36 @@ MonoBehaviour:
   m_ControllerTransform: {fileID: 1670256625}
   m_EnableMoveWhileSelecting: 0
   m_MoveFactor: 1
+  m_GrabMoveInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Grab Move
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 15aadc0b-0910-4922-a6f2-604555e0e335
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Grab Move Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: bcf461c5-c1cc-41ca-9d7d-f09f8b5830d6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
   m_GrabMoveAction:
     m_UseReference: 1
     m_Action:
@@ -1597,7 +1662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760ff70c1c91bdd45907d0ff0cdcaf7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1589979491555116479}
+  m_Mediator: {fileID: 0}
+  m_TransformationPriority: 0
   m_EnableFreeXMovement: 1
   m_EnableFreeYMovement: 0
   m_EnableFreeZMovement: 1
@@ -2086,7 +2152,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_ButtonPressPoint: 0.5
 --- !u!114 &3197963936919065014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,11 +2165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
+  m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -2124,22 +2187,71 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
+  m_SelectInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Select
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 2974957e-e95f-4cfd-868a-d2fd81876c7b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Select Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: e15870ef-8a86-466b-a524-35ffaeb57f41
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_ActivateInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Activate
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 2ba2a141-5bbe-4083-a7dc-4f5d54723dcc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Activate Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 862c713f-a50f-4d32-b40b-d38189bc5e18
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
+  m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2200,12 +2312,13 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 1
+  m_BlockUIOnInteractableSelection: 1
+  m_ManipulateAttachTransform: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
-  m_AnchorRotateReferenceFrame: {fileID: 0}
-  m_AnchorRotationMode: 0
+  m_RotateReferenceFrame: {fileID: 0}
+  m_RotateMode: 0
   m_UIHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2216,6 +2329,150 @@ MonoBehaviour:
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
   m_ScaleMode: 0
+  m_UIPressInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: UI Press
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 414e514e-9372-4aef-a559-fbd4ec9ac735
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: UI Press Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 63d731fa-434a-48db-bb32-6efe087545c3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_UIScrollInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: UI Scroll
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 1867f701-e539-438a-a0cf-a4b4ec59fd4b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_TranslateManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Translate Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 6b0e957e-a4b2-427c-bf96-447073f76289
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_RotateManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Rotate Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 141f4b99-af7e-40ef-8df9-a7dd192df4cd
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_DirectionalManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Directional Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 03527ca8-d379-4da9-9fef-6b854b1967fa
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_ScaleToggleInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 3c86805a-783f-4117-9192-f2d0660fc161
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Scale Toggle Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 8db078bc-c64b-4f60-9f94-0fa3d757bdfb
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_ScaleOverTimeInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Scale Over Time
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 3612a5e6-5477-465b-ae55-177a30f71732
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_ScaleDistanceDeltaInput:
+    m_InputSourceMode: 0
+    m_InputAction:
+      m_Name: Scale Distance Delta
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 916cd5f7-dfc9-420a-8fae-d26964315371
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
 --- !u!120 &5693904996211422659
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2741,7 +2998,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_ButtonPressPoint: 0.5
 --- !u!114 &334917131583486707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2755,11 +3011,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
+  m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -2779,22 +3033,71 @@ MonoBehaviour:
       m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
+  m_SelectInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Select
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: e2c182a0-bfa0-4bcf-9d95-4a47c19c98b3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Select Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 6ef76ee8-1ac0-416e-b731-9c286aec9dc7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_ActivateInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Activate
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 4fe9530f-ae67-47cd-a8db-3af78a9a879f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Activate Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 94959167-35aa-4c44-aa55-3550816d74fc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
   m_AllowHoveredActivate: 0
   m_TargetPriorityMode: 0
+  m_HideControllerOnSelect: 0
+  m_InputCompatibilityMode: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2855,12 +3158,13 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 1
+  m_BlockUIOnInteractableSelection: 1
+  m_ManipulateAttachTransform: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
-  m_AnchorRotateReferenceFrame: {fileID: 0}
-  m_AnchorRotationMode: 0
+  m_RotateReferenceFrame: {fileID: 0}
+  m_RotateMode: 0
   m_UIHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2871,6 +3175,150 @@ MonoBehaviour:
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
   m_ScaleMode: 0
+  m_UIPressInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: UI Press
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 14c993ff-5a37-4794-8cb3-2209ea2a479a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: UI Press Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: a58e3ff6-8d11-4c42-b9de-105228494d2d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_UIScrollInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: UI Scroll
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 7e8af9c0-f33b-4ba2-abe5-b82529f2a37e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_TranslateManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Translate Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 0918ca24-51bb-45f5-835b-062d2ff74819
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_RotateManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Rotate Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 8f0d66f0-56a8-402e-8894-8ebe7d0c1956
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_DirectionalManipulationInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Directional Manipulation
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: bfc9517e-8802-47d8-ab1a-79e9623b0ec1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_ScaleToggleInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 2f98b3c9-7135-494e-b6ac-890fc98b350f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Scale Toggle Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 7ed8bbf7-fa7b-4d83-bcac-3119e876c9fa
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: 0}
+    m_InputActionReferenceValue: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  m_ScaleOverTimeInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Scale Over Time
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 98bfb24c-3814-46d0-a86e-edd74316f844
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_ScaleDistanceDeltaInput:
+    m_InputSourceMode: 0
+    m_InputAction:
+      m_Name: Scale Distance Delta
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 8a9a6b1c-7cfc-46d6-bc58-992839e6a7ea
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
 --- !u!120 &5419412109758474013
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3466,7 +3914,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_ButtonPressPoint: 0.5
 --- !u!1001 &2147063422107175346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3883,7 +4330,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_ButtonPressPoint: 0.5
 --- !u!4 &1319746309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2761784063978902506, guid: c1800acf6366418a9b5f610249000331, type: 3}
