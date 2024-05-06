@@ -1,3 +1,5 @@
 .DS_Store
 UnitySetup-2021.3.33f1
 UnityProject
+.vs
+.vscode
