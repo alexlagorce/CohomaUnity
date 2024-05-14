@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Optimisation
+/*
+Optimiser l'initialisation des cubes, avec des données pré calculées et générée de manière asynchrone, cela peux réduire le temps d'inialisation
+Instancier les cubes de manière plus progressive, technique de pooling pour réutiliser les cubes déjà instanciés
+*/
+
 public class Spawner : MonoBehaviour
 {
-    private SpawnData[] spawnArray = new SpawnData[10000];
-    private float delay  = 2f;
+    private SpawnData[] spawnArray = new SpawnData[10];
+    private float delay  = 2f; 
     private float currentTime = 0f;
     public  GameObject cube;
 
