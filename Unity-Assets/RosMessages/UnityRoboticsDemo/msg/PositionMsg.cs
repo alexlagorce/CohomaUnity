@@ -13,6 +13,7 @@ namespace RosMessageTypes.UnityRoboticsDemo
         public const string k_RosMessageName = "unity_robotics_demo_msgs/Position";
         public override string RosMessageName => k_RosMessageName;
 
+        public int id;
         public float latitude;
         public float longitude;
         public float altitude;
@@ -21,6 +22,7 @@ namespace RosMessageTypes.UnityRoboticsDemo
 
         public PositionMsg()
         {
+            this.id = 0;
             this.latitude = 0.0f;
             this.longitude = 0.0f;
             this.altitude = 0.0f;
@@ -28,8 +30,9 @@ namespace RosMessageTypes.UnityRoboticsDemo
             this.y = 0.0f;
         }
 
-        public PositionMsg(float latitude, float longitude, float altitude, float x, float y)
+        public PositionMsg(int id, float latitude, float longitude, float altitude, float x, float y)
         {
+            this.id = id;
             this.latitude = latitude;
             this.longitude = longitude;
             this.altitude = altitude;
@@ -41,6 +44,7 @@ namespace RosMessageTypes.UnityRoboticsDemo
 
         private PositionMsg(MessageDeserializer deserializer)
         {
+            deserializer.Read(out this.id);
             deserializer.Read(out this.latitude);
             deserializer.Read(out this.longitude);
             deserializer.Read(out this.altitude);
@@ -50,6 +54,7 @@ namespace RosMessageTypes.UnityRoboticsDemo
 
         public override void SerializeTo(MessageSerializer serializer)
         {
+            serializer.Write(this.id);
             serializer.Write(this.latitude);
             serializer.Write(this.longitude);
             serializer.Write(this.altitude);
@@ -60,6 +65,7 @@ namespace RosMessageTypes.UnityRoboticsDemo
         public override string ToString()
         {
             return "PositionMsg: " +
+            "\nid: " + id.ToString() +
             "\nlatitude: " + latitude.ToString() +
             "\nlongitude: " + longitude.ToString() +
             "\naltitude: " + altitude.ToString() +
