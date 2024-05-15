@@ -12,6 +12,7 @@ public class ObserverPublisherPosition : MonoBehaviour
 
     // The game object
     public GameObject cube;
+
     // Publish the cube's position, rotation, latitude, and longitude every N seconds
     public float publishMessageFrequency = 5.0f;
 
