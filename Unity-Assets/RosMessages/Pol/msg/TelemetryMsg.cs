@@ -5,72 +5,67 @@ using System.Collections.Generic;
 using System.Text;
 using Unity.Robotics.ROSTCPConnector.MessageGeneration;
 
-namespace RosMessageTypes.UnityRoboticsDemo
+namespace RosMessageTypes.Pol
 {
     [Serializable]
-    public class PositionMsg : Message
+    public class TelemetryMsg : Message
     {
-        public const string k_RosMessageName = "unity_robotics_demo_msgs/Position";
+        public const string k_RosMessageName = "pol_msgs/Telemetry";
         public override string RosMessageName => k_RosMessageName;
 
-        public int id;
+        //  Telemetry Message Definition
+        public float battery_percentage;
+        public float battery_voltage;
         public float latitude;
         public float longitude;
         public float altitude;
-        public float x;
-        public float y;
 
-        public PositionMsg()
+        public TelemetryMsg()
         {
-            this.id = 0;
+            this.battery_percentage = 0.0f;
+            this.battery_voltage = 0.0f;
             this.latitude = 0.0f;
             this.longitude = 0.0f;
             this.altitude = 0.0f;
-            this.x = 0.0f;
-            this.y = 0.0f;
         }
 
-        public PositionMsg(int id, float latitude, float longitude, float altitude, float x, float y)
+        public TelemetryMsg(float battery_percentage, float battery_voltage, float latitude, float longitude, float altitude)
         {
-            this.id = id;
+            this.battery_percentage = battery_percentage;
+            this.battery_voltage = battery_voltage;
             this.latitude = latitude;
             this.longitude = longitude;
             this.altitude = altitude;
-            this.x = x;
-            this.y = y;
         }
 
-        public static PositionMsg Deserialize(MessageDeserializer deserializer) => new PositionMsg(deserializer);
+        public static TelemetryMsg Deserialize(MessageDeserializer deserializer) => new TelemetryMsg(deserializer);
 
-        private PositionMsg(MessageDeserializer deserializer)
+        private TelemetryMsg(MessageDeserializer deserializer)
         {
-            deserializer.Read(out this.id);
+            deserializer.Read(out this.battery_percentage);
+            deserializer.Read(out this.battery_voltage);
             deserializer.Read(out this.latitude);
             deserializer.Read(out this.longitude);
             deserializer.Read(out this.altitude);
-            deserializer.Read(out this.x);
-            deserializer.Read(out this.y);
         }
 
         public override void SerializeTo(MessageSerializer serializer)
         {
-            serializer.Write(this.id);
+            serializer.Write(this.battery_percentage);
+            serializer.Write(this.battery_voltage);
             serializer.Write(this.latitude);
             serializer.Write(this.longitude);
             serializer.Write(this.altitude);
-            serializer.Write(this.x);
-            serializer.Write(this.y);
         }
 
         public override string ToString()
         {
-            return "PositionMsg: " +
-            "\nid: " + id.ToString() +
+            return "TelemetryMsg: " +
+            "\nbattery_percentage: " + battery_percentage.ToString() +
+            "\nbattery_voltage: " + battery_voltage.ToString() +
             "\nlatitude: " + latitude.ToString() +
             "\nlongitude: " + longitude.ToString() +
-            "\naltitude: " + altitude.ToString() +
-            "\nx: " + x.ToString() +
-            "\ny: " + y.ToString();
+            "\naltitude: " + altitude.ToString();
         }
 
 #if UNITY_EDITOR

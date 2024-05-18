@@ -8,7 +8,7 @@ Optimiser l'initialisation des cubes, avec des données pré calculées et gén�
 Instancier les cubes de manière plus progressive, technique de pooling pour réutiliser les cubes déjà instanciés
 */
 
-public class Spawner : MonoBehaviour
+public class Spawner : MonoBehaviour 
 {
     private SpawnData[] spawnArray = new SpawnData[10];
     private float delay  = 2f; 
@@ -49,7 +49,7 @@ public class Spawner : MonoBehaviour
                 renderer.material.SetColor("_Color", new Color(spawnArray[i].color_r, spawnArray[i].color_g, spawnArray[i].color_b, 1f));
 
                 currentTime = Time.fixedTime;
-                Destroy(tempCube, 0.5f);
+                //Destroy(tempCube, 0.5f);
             }
         }
     }
