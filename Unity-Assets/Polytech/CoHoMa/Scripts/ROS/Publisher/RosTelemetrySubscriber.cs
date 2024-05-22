@@ -1,8 +1,8 @@
 using UnityEngine;
 using Unity.Robotics.ROSTCPConnector;
-using TelemetryMsg = RosMessageTypes.UnityRoboticsDemo.TelemetryMsg;
+using TelemetryMsg = RosMessageTypes.Pol.TelemetryMsg;
 
-namespace Polytech.CoHoMa.ROS {
+namespace Polytech.CoHoMa.ROS.Publisher {
 
 public class RosTelemetrySubscriber : MonoBehaviour
 {
@@ -44,9 +44,13 @@ public class RosTelemetrySubscriber : MonoBehaviour
     void UpdateDrone(TelemetryMsg telemetry)
     {
         Vector3 position = GPSEncoder.GPSToUCS(telemetry.latitude, telemetry.longitude);
+        Debug.Log($"Position: {position}");
+
         position.x = position.x * x_actual_size / x_size;
         position.z = position.z * z_actual_size / z_size;
         position.y = telemetry.altitude;
+
+        Debug.Log($"Position: {position}");
 
 
         this.transform.position = position;
