@@ -1,8 +1,8 @@
 using UnityEngine;
 using Unity.Robotics.ROSTCPConnector;
-using TelemetryMsg = RosMessageTypes.UnityRoboticsDemo.TelemetryMsg;
+using TelemetryMsg = RosMessageTypes.Pol.TelemetryMsg;
 
-namespace Polytech.CoHoMa.ROS {
+namespace Polytech.CoHoMa.ROS.Publisher {
 
 public class RosTelemetrySubscriber : MonoBehaviour
 {
