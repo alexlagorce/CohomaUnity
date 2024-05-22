@@ -1,6 +1,6 @@
 using UnityEngine;
 using Unity.Robotics.ROSTCPConnector;
-using RosMessageTypes.UnityRoboticsDemo;
+using PositionMsg = RosMessageTypes.Pol.PositionMsg;
 using Polytech.CoHoMa.Core;
 
 namespace Polytech.CoHoMa.ROS {
@@ -17,7 +17,7 @@ public class ObserverPublisherPosition : MonoBehaviour
     public int id = 1;
 
     // Publish the cube's position, rotation, latitude, and longitude every N seconds
-    public float publishMessageFrequency = 5.0f;
+    public float publishMessageFrequency = 20f;
 
     // The size of the map in Unity units
     public float x_size = 144.01f;

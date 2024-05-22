@@ -13,8 +13,6 @@ public class RosObserverSubscriber : MonoBehaviour
 
     // The cube to spawn
     public  GameObject cube;
-
-    // Start is called before the first frame update
     void Start()
     {
         // Register the subscriber with the specified topic and callback method
@@ -28,26 +26,29 @@ public class RosObserverSubscriber : MonoBehaviour
         // Print the number of points to the console
         Debug.Log($"Number of points: {observerMessage.points.Length}");
 
-        // Print observer values with labels to the console
-        for(int i = 0; i < observerMessage.points.Length; i++)
-        {
-            Debug.Log($"Point {i}: ({observerMessage.points[i].x}, {observerMessage.points[i].y}, {observerMessage.points[i].z})");
-            Debug.Log($"Color: ({observerMessage.points[i].color_r}, {observerMessage.points[i].color_g}, {observerMessage.points[i].color_b}, {observerMessage.points[i].color_a})");
-            Debug.Log($"Timestamp: {observerMessage.points[i].timestamp}");
-        }
-
-
-        // Do something with observer data
         UpdateObserverPoints(observerMessage);
     }
 
-    // Update is called once per frame
     void UpdateObserverPoints(SpatialDataMsg observerMessage)
     {
         for(int i = 0; i < observerMessage.points.Length; i++)
         {
-            var tempCube = Instantiate(cube, new Vector3(observerMessage.points[i].x, observerMessage.points[i].y, observerMessage.points[i].z), Quaternion.identity);
 
+            // Convert from cm to meters
+            float x_in_meters = observerMessage.points[i].x / 100f;
+            float y_in_meters = observerMessage.points[i].y / 100f;
+            float z_in_meters = observerMessage.points[i].z / 100f;
+
+            Vector3 position = new Vector3(x_in_meters, z_in_meters, y_in_meters);
+
+            // Instantiate a cube at the specified position
+            var tempCube = Instantiate(cube, position, Quaternion.identity);
+
+            // Set the scale of the instantiated cube
+            Vector3 cubeScale = new Vector3(0.5f, 0.5f, 0.5f);
+            tempCube.transform.localScale = cubeScale;
+
+            // Set the color of the instantiated cube
             Renderer renderer = tempCube.GetComponent<Renderer>();
             renderer.material.SetColor("_Color", new Color(observerMessage.points[i].color_r, observerMessage.points[i].color_g, observerMessage.points[i].color_b, observerMessage.points[i].color_a));
         }
