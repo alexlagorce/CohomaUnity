@@ -1,0 +1,268 @@
+<linker>
+ <assembly fullname="Unity.Burst">
+  <type fullname="Unity.Burst.LowLevel.BurstCompilerService">
+   <method name="GetOrCreateSharedMemory"/>
+  </type>
+  <type fullname="Unity.Burst.LowLevel.BurstCompilerService">
+   <method name="Log"/>
+  </type>
+ </assembly>
+ <assembly fullname="Unity.Collections">
+  <type fullname="Unity.Collections.AllocatorManager.SharedStatics.TableEntry">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="Malloc"/>
+  </type>
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="Free"/>
+  </type>
+  <type fullname="Unity.Jobs.LowLevel.Unsafe.JobsUtility">
+   <method name="GetWorkStealingRange"/>
+  </type>
+ </assembly>
+ <assembly fullname="Unity.Entities">
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.CompositeScaleSystem.ToCompositeScale&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.CompositeScale&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.Scale&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.NonUniformScale&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.ScalePivotTranslation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.ScalePivot&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeInfo">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Jobs.LowLevel.Unsafe.JobsUtility">
+   <method name="GetWorkStealingRange"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.PostRotationEulerSystem.PostRotationEulerToPostRotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerXYZ&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerXZY&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerYXZ&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerYZX&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerZXY&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.PostRotationEulerZYX&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.TRSToLocalToWorldSystem.TRSToLocalToWorld&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.Rotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.CompositeRotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.Translation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.LocalToWorld&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.ParentScaleInverseSystem.ToChildParentScaleInverse&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.Child&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.ParentScaleInverse&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.LocalToParentSystem.UpdateHierarchy&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.LocalToParent&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.TRSToLocalToParentSystem.TRSToLocalToParent&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.WorldToLocalSystem.ToWorldToLocal&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.WorldToLocal&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.RotationEulerSystem.RotationEulerToRotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerXYZ&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerXZY&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerYXZ&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerYZX&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerZXY&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationEulerZYX&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.EntityComponentStore">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.EntityDataAccess">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Entities.Entity&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.EntityNameStorage">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedEntityOffsetInfo">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.ManagedComponentStore.CompanionLinkTypeIndexStatic">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="MemCpyReplicate"/>
+  </type>
+  <type fullname="Unity.Entities.JobEntityBatchExtensions.JobEntityBatchProducer`1&lt;Unity.Transforms.CompositeRotationSystem.ToCompositeRotation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationPivotTranslation&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Transforms.RotationPivot&gt;">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedBlobAssetRefOffset">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Entities.SystemBaseRegistry">
+   <method name=".cctor"/>
+  </type>
+  <type fullname="Unity.Jobs.JobHandle">
+   <method name="ScheduleBatchedJobs"/>
+  </type>
+  <type fullname="Unity.Entities.TypeManager.SharedTypeIndex`1&lt;Unity.Entities.EntityGuid&gt;">
+   <method name=".cctor"/>
+  </type>
+ </assembly>
+ <assembly fullname="Unity.Physics">
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="Malloc"/>
+  </type>
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="MemCpyStride"/>
+  </type>
+ </assembly>
+ <assembly fullname="Unity.Physics.Hybrid">
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="Free"/>
+  </type>
+  <type fullname="Unity.DebugDisplay.Unmanaged">
+   <method name=".cctor"/>
+  </type>
+ </assembly>
+ <assembly fullname="Unity.RenderPipelines.Universal.Runtime">
+  <type fullname="UnityEngine.Rendering.Universal.DecalUpdateCachedSystem.UpdateTransformsJob">
+   <method name=".cctor"/>
+  </type>
+ </assembly>
+ <assembly fullname="UnityEngine.CoreModule">
+  <type fullname="Unity.Jobs.LowLevel.Unsafe.JobsUtility">
+   <method name="GetWorkStealingRange"/>
+  </type>
+  <type fullname="Unity.Jobs.LowLevel.Unsafe.JobsUtility">
+   <method name="Schedule_Injected"/>
+  </type>
+  <type fullname="Unity.Jobs.LowLevel.Unsafe.JobsUtility">
+   <method name="ScheduleParallelFor_Injected"/>
+  </type>
+  <type fullname="Unity.Jobs.JobHandle">
+   <method name="CombineDependenciesInternalPtr_Injected"/>
+  </type>
+  <type fullname="Unity.Jobs.JobHandle">
+   <method name="ScheduleBatchedJobsAndComplete"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccessArray">
+   <method name="GetSortedToUserIndex"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccessArray">
+   <method name="GetSortedTransformAccess"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="SetPosition"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="SetRotation"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetRotation"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetPosition"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetLocalScale"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetLocalToWorldMatrix"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="SetLocalPosition"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="SetLocalRotation"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="SetLocalScale"/>
+  </type>
+  <type fullname="UnityEngine.Matrix4x4">
+   <method name="GetRotation_Injected"/>
+  </type>
+  <type fullname="UnityEngine.Matrix4x4">
+   <method name="GetLossyScale_Injected"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetLocalPosition"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccess">
+   <method name="GetLocalRotation"/>
+  </type>
+  <type fullname="UnityEngine.Jobs.TransformAccessArray">
+   <method name="RemoveAtSwapBack"/>
+  </type>
+  <type fullname="Unity.Collections.LowLevel.Unsafe.UnsafeUtility">
+   <method name="Malloc"/>
+  </type>
+  <type fullname="UnityEngine.Vector3">
+   <method name="Slerp_Injected"/>
+  </type>
+ </assembly>
+</linker>

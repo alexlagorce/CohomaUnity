@@ -47,7 +47,7 @@ public class RosObserverSubscriber : MonoBehaviour
             var tempCube = Instantiate(cube, position, Quaternion.identity);
 
             // Set the scale of the instantiated cube
-            Vector3 cubeScale = new Vector3(0.5f, 0.5f, 0.5f);
+            Vector3 cubeScale = new Vector3(0.05f, 0.05f, 0.05f);
             tempCube.transform.localScale = cubeScale;
 
             // Set the color of the instantiated cube

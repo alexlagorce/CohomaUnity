@@ -2566,7 +2566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445072621}
-  - component: {fileID: 445072620}
+  - component: {fileID: 445072622}
   m_Layer: 0
   m_Name: RosPublisher
   m_TagString: Untagged
@@ -2574,24 +2574,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &445072620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445072619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 312fc1fa763c7483d8729f99a5ef6140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topicName: position
-  cube: {fileID: 1369225526}
-  id: 1
-  publishMessageFrequency: 5
-  x_size: 252.67
-  z_size: 133
 --- !u!4 &445072621
 Transform:
   m_ObjectHideFlags: 0
@@ -2607,6 +2589,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445072622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445072619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312fc1fa763c7483d8729f99a5ef6140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topicName: position
+  observer: {fileID: 1369225526}
+  id: 1
+  x_size: 144.01
+  z_size: 92.82
 --- !u!114 &454314690 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4113899542012835519, guid: 4fa2865996e6740428408154e2ed2c55, type: 3}
@@ -4609,7 +4608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7acef0b79454c9b4dae3f8139bc4ba77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RosIPAddress: 100.117.30.113
+  m_RosIPAddress: 100.124.130.90
   m_RosPort: 10000
   m_ConnectOnStart: 1
   m_KeepaliveTime: 1
